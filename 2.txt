@@ -1,0 +1,19 @@
+2
+.global _start
+
+_start:
+    MOV R0, #1    
+    MOV R1, #0    
+    MOV R2, #10    
+
+loop:
+    ADD R1, R1, R0    
+    ADD R0, R0, #1    
+    CMP R0, R2    
+    BLT loop    
+
+    LDR R3, =0x20000000    
+    STR R1, [R3]    
+
+end_loop:
+    B end_loop
