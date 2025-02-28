@@ -1,0 +1,26 @@
+ AREA ADDITION,CODE,READONLY
+		mov r1,#3;
+		mov r2,#7;
+		add r3,r1,r2;
+		nop
+		nop
+		nop
+		end;
+
+ AREA SUBTRACTION,CODE,READONLY
+		mov r1,#10;
+		mov r2,#3;
+		sub r3,r1,r2;
+		nop
+		nop
+		nop
+		end;
+
+ AREA MULTIPLICATION,CODE,READONLY
+		mov r1,#6;
+		mov r2,#2;
+		mul r3,r1,r2;
+		nop
+		nop
+		nop
+		end;
